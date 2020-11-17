@@ -1,5 +1,5 @@
 ﻿// PLab10.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Исключения (try, catch, throw)
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
@@ -278,20 +278,20 @@ int main()
     printf("Input genre: ");
     cin >> s3;
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода цены
     {
         printf("Input price: ");
         r = 1;
         cin >> x1;
         try
         {
-            if (!isdigit(x1[0]))
+            if (!isdigit(x1[0])) //если цена - цифра
                 throw 1;
             x = stoi(x1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r==1)
@@ -300,20 +300,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода количества на складе
     {
         printf("Input number in stock: ");
         r = 1;
         cin >> y1;
         try
         {
-            if (!isdigit(y1[0]))
+            if (!isdigit(y1[0])) //если количество на складе - цифра
                 throw 1;
             y = stoi(y1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -322,20 +322,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода популярности
     {
         printf("Input popularity: ");
         r = 1;
         cin >> z1;
         try
         {
-            if (!isdigit(z1[0]))
+            if (!isdigit(z1[0])) //если популярность - цифра
                 throw 1;
             z = stoi(z1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -386,20 +386,20 @@ int main()
     printf("Input genre: ");
     cin >> s3;
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода цены
     {
         printf("Input price: ");
         r = 1;
         cin >> x1;
         try
         {
-            if (!isdigit(x1[0]))
+            if (!isdigit(x1[0])) //если цена - цифра
                 throw 1;
             x = stoi(x1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -408,20 +408,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода количества на складе
     {
         printf("Input number in stock: ");
         r = 1;
         cin >> y1;
         try
         {
-            if (!isdigit(y1[0]))
+            if (!isdigit(y1[0])) //если количество на складе - цифра
                 throw 1;
             y = stoi(y1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -430,20 +430,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода популярности
     {
         printf("Input popularity: ");
         r = 1;
         cin >> z1;
         try
         {
-            if (!isdigit(z1[0]))
+            if (!isdigit(z1[0])) //если популярность - цифра
                 throw 1;
             z = stoi(z1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -507,20 +507,20 @@ int main()
     printf("Input genre: ");
     cin >> s3;
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода цены
     {
         printf("Input price: ");
         r = 1;
         cin >> x1;
         try
         {
-            if (!isdigit(x1[0]))
+            if (!isdigit(x1[0])) //если цена - цифра
                 throw 1;
             x = stoi(x1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -529,20 +529,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода количества на складе
     {
         printf("Input number in stock: ");
         r = 1;
         cin >> y1;
         try
         {
-            if (!isdigit(y1[0]))
+            if (!isdigit(y1[0])) //если количество на складе - цифра
                 throw 1;
             y = stoi(y1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
@@ -551,20 +551,20 @@ int main()
         }
     }
     r = 0;
-    while (r == 0)
+    while (r == 0) //проверка корректности ввода популярности
     {
         printf("Input popularity: ");
         r = 1;
         cin >> z1;
         try
         {
-            if (!isdigit(z1[0]))
+            if (!isdigit(z1[0])) //если популярность - цифра
                 throw 1;
             z = stoi(z1);
         }
         catch (int v)
         {
-            cout << "Incorrect value\n";
+            cout << "Incorrect value\n"; //сообщение об ошибке
             r = 0;
         }
         if (r == 1)
